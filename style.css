@@ -1,0 +1,90 @@
+html{
+   overflow-y: none;
+   overflow-x: none;
+}
+.container{
+    width: 100%;
+    /*border: 1px solid black;*/
+    height: 250px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-sizing: border-box;
+    background-color: rgba(228, 182, 245, 0.299);
+}
+.bar{
+    width: 100%;
+    font-size:100px;
+    border:none;
+    padding: 10px;
+    background-color: rgba(18, 32, 37, 0.211);
+    box-sizing: border-box;
+    /*
+       || 
+    */
+    
+}
+.bar td{
+    font-size: 80px;
+    text-align: center;
+    color: rgb(246, 246, 250);
+    border-radius: 20px;
+    background-color: rgb(71, 71, 71);
+    box-shadow: 0px 2px 6px black;
+   
+}
+#space{
+    width: 2px;
+   background-color:rgba(0, 0, 0, 0);
+   border: none;
+   box-shadow: none;
+   color: black;
+}
+#player{
+    margin-top: 20px;
+    height:80px;
+    /*background-color: black;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+
+}
+#starter{
+    position: absolute;
+    margin:auto;
+    height:15%;
+    width: 25%;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(90, 125, 250);
+    box-shadow: 0px 4px 10px rgb(65, 63, 63);
+    outline: none;
+    font-size:30px ;
+    color: aliceblue;
+   
+}
+#reset{
+    background-color: rgb(44, 48, 48);
+    border: none;
+    outline: none;
+    width: 15%;
+    height: 40%;
+    color: white;
+    font: bold;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgb(65, 63, 63);
+    
+
+}
+#save{
+    background-color: rgb(59, 138, 97);
+    border: none;
+    outline: none;
+    width: 15%;
+    height: 40%;
+    color: white;
+    font: bold;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgb(65, 63, 63);
+}
