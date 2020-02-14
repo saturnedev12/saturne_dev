@@ -10,9 +10,12 @@ const minute = document.getElementById("minute");
 //button
 const button = document.getElementById("starter");
 const buttonReset = document.getElementById("reset");
+//le button de sauvegarde
+const buttonSave = document.getElementById("save");
+const zoneScore = document.getElementById("score");
 
 let interupteur=1;
-
+let rang =0;
 /*alert(box.innerText.length);*/
 let centiSeconde=0;
 let secondes=0;
@@ -75,6 +78,14 @@ const Start = () =>{
        interupteur--;
     }
 } 
+const Save = () =>{
+    rang++;
+    zoneScore.innerHTML += `<div class="result">
+    <span>${rang}</span>
+    <div>${minute.firstChild.nodeValue} : ${seconde.firstChild.nodeValue} : ${box.firstChild.nodeValue}</div>
+</div>`
+} 
+
 button.addEventListener('click',Start,false);
 
 //renitialiser
@@ -82,3 +93,4 @@ const Reset = () =>{
     window.location.reload();
 }
 buttonReset.addEventListener('click',Reset,false);
+buttonSave.addEventListener('click',Save,false);
